@@ -63,7 +63,12 @@
     <div class="container-sm text-left mt-5">
         <div class="row">
           <div class="col ">
+            <div class="d-flex justify-content-between">
             <span><h2 class="text-white">Catalogo Libri </h2></span>
+            <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+            
+            </div>
+            
 
             <table class="table table-striped">
                 <thead>
@@ -95,7 +100,8 @@
                   </tr>
                   <tr>
                     <td scope="row">Il signore degli anelli</td>
-                    <td colspan="2">18/10/2023</td>
+                    <td>18/10/2023</td>
+                    <td><span class="badge text-bg-warning text-white">In prestito</span></td>
                     <td>
                         <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
                         <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
@@ -105,71 +111,136 @@
                     <td scope="row">Harry potter e la pietra filosofale</td>
                     <td>-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td>@mdo</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
                   <tr>
                     <td scope="row">Il codice da vincii</td>
                     <td>-</td>
                     <td><span class="badge text-bg-danger">Non Disponibile</span></td>
-                    <td>@fat</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
                   <tr>
                     <td scope="row">Shining</td>
-                    <td colspan="">-</td>
+                    <td>-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td></td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
-                </tbody>
-                <tr>
+                  <tr>
                     <td scope="row">La divina commedia</td>
                     <td>21/09/2023</td>
                     <td><span class="badge text-bg-warning text-white">In prestito</span></td>
-                    <td>@mdo</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
                   <tr>
                     <td scope="row">Il trono di spade</td>
                     <td>-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td>@fat</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
                   <tr>
                     <td scope="row">Il mondo di sofia</td>
-                    <td colspan="">-</td>
+                    <td>-</td>
                     <td><span class="badge text-bg-danger">Non Disponibile</span></td>
-                    <td>@twitter</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
-                  <td scope="row">Le cronache di narnia: Il leone, la strega e l'armadio</td>
+                  <tr>
+                    <td scope="row">Le cronache di narnia: Il leone, la strega e l'armadio</td>
                     <td>25/07/2023</td>
                     <td><span class="badge text-bg-warning text-white">In prestito</span></td>
-                    <td>@fat</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
                   <tr>
                     <td scope="row">Il piccolo principe</td>
-                    <td colspan="">-</td>
+                    <td>-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td>@twitter</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
                   <tr>
                     <td scope="row">La storia infinita</td>
-                    <td colspan="">-</td>
+                    <td>-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                    <td>@twitter</td>
+                    <td>
+                        <button class="btn btn-sm btn-outline-secondary"><i class="fas fa-edit"></i></button>
+                        <button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button>
+                      </td>
                   </tr>
+                </tbody>
               </table>
           </div>
+
           <div class="col-4">
-            Column
+            <div class="card">
+                <h5 class="card-header">Todo</h5>
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Chiamare Segreteria
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+                        <label class="form-check-label" for="flexCheckChecked1">
+                          Mandare avvisi prestiti scaduti
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                        <label class="form-check-label" for="flexCheckChecked2">
+                          Ordinare nuovi libri
+                        </label>
+                      </div>
+                </div>
+            </div>
+            <div class="card ">
+                <h5 class="card-header">Todo</h5>
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Chiamare Segreteria
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+                        <label class="form-check-label" for="flexCheckChecked1">
+                          Mandare avvisi prestiti scaduti
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                        <label class="form-check-label" for="flexCheckChecked2">
+                          Ordinare nuovi libri
+                        </label>
+                      </div>
+                </div>
+            </div>
+          </div>
         </div>
-
-
-
-   
-         
     </div>
-
-
-
-    
 </body>
-
 </html>
